@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<!--
+#
+# Licensed to the Apache Software Foundation (ASF) under one
+# or more contributor license agreements.  See the NOTICE file
+# distributed with this work for additional information
+# regarding copyright ownership.  The ASF licenses this file
+# to you under the Apache License, Version 2.0 (the
+# "License"); you may not use this file except in compliance
+# with the License.  You may obtain a copy of the License at
+# 
+# http://www.apache.org/licenses/LICENSE-2.0
+# 
+# Unless required by applicable law or agreed to in writing,
+# software distributed under the License is distributed on an
+# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+#  KIND, either express or implied.  See the License for the
+# specific language governing permissions and limitations
+# under the License.
+#
+-->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="format-detection" content = "telephone=no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width;">
+
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+    
+	<title>BAPP - appli de test client-serveur</title>
+	<script src="phonegap.js" type="text/javascript"></script>
+</head>
+<body>
+	<div class="page current" id="bugs">
+		<header>
+			<h1>Open bugs</h1>
+		</header>
+		
+		<ul></ul>
+	</div>
+
+	<div class="page" id="add-bug">
+		<header>
+			<h1>Add a new bug</h1>
+		</header>
+		
+		<form>
+			<label for="bug-title">Bug title</label>
+			<input type="text" id="bug-title" name="bug-title">
+
+			<label for="bug-details">Bug details</label>
+			<textarea id="bug-details" name="bug-details" cols="30" rows="10"></textarea>
+
+			<label for="bug-priority">Bug priority</label>
+			<select id="bug-priority" name="bug-priority">
+				<option value="1">Urgent</option>
+				<option value="2">High</option>
+				<option value="3">Medium</option>
+				<option value="4">Low</option>
+			</select>
+
+			<input type="submit" value="Add bug">
+		</form>
+	</div>
+
+	<script src="js/zepto.min.js"></script>
+	<script src="js/index.js"></script>
+	<script>
+		app.initialize();
+	</script>
+</body>
+</html>
